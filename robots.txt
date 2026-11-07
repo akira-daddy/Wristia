@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # [要変更] 本番URLに置換してください
-Sitemap: https://example.com/wristia/sitemap.xml
+Sitemap: https://akira-daddy.github.io/wristia/sitemap.xml
