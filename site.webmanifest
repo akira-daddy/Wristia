@@ -1,0 +1,13 @@
+{
+  "name": "Wristia（リスティア）",
+  "short_name": "Wristia",
+  "lang": "ja",
+  "start_url": "./",
+  "display": "browser",
+  "background_color": "#F6F7F4",
+  "theme_color": "#F6F7F4",
+  "icons": [
+    { "src": "favicon/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "favicon/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

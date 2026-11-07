@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wristia（リスティア）｜手首ぜんぶが画面になる、フレキシブルOLEDスマートリストウォッチ</title>
+<meta name="description" content="リストバンド全体がフレキシブルOLED。予定・メール・LINE・健康情報を、大きな画面で見やすく。幅5cm／6cmの2タイプ。">
+<meta name="theme-color" content="#F6F7F4">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="format-detection" content="telephone=no">
+<!-- [要変更] 公開URLが決まったら https://example.com/wristia/ を本番URLに一括置換してください（OGP画像は絶対URL必須） -->
+<link rel="canonical" href="https://example.com/wristia/">
+
+<!-- ===== OGP / Twitter Card ===== -->
+<meta property="og:type" content="product">
+<meta property="og:site_name" content="Wristia（リスティア）">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="Wristia（リスティア）｜手首ぜんぶが画面になる、フレキシブルOLEDスマートリストウォッチ">
+<meta property="og:description" content="リストバンド全体がフレキシブルOLED。予定・メール・LINE・健康情報を、大きな画面で見やすく。幅5cm／6cmの2タイプ。">
+<meta property="og:url" content="https://example.com/wristia/">
+<meta property="og:image" content="https://example.com/wristia/images/ogp.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Wristia 手首ぜんぶが、画面になる。フレキシブルOLEDスマートリストウォッチ">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Wristia（リスティア）｜手首ぜんぶが画面になるスマートリストウォッチ">
+<meta name="twitter:description" content="リストバンド全体がフレキシブルOLED。予定・メール・LINE・健康情報を、大きな画面で見やすく。">
+<meta name="twitter:image" content="https://example.com/wristia/images/ogp.jpg">
+
+<!-- ===== Favicon ===== -->
+<link rel="icon" href="favicon/favicon.ico" sizes="48x48">
+<link rel="icon" href="favicon/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<!-- ===== 構造化データ（JSON-LD） ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://example.com/wristia/#org",
+      "name": "Magic electronics",
+      "email": "support@magic-electronics.jp",
+      "address": { "@type": "PostalAddress", "postalCode": "215-0004", "addressRegion": "神奈川県", "addressLocality": "川崎市麻生区", "streetAddress": "万福寺1-18-1", "addressCountry": "JP" }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://example.com/wristia/#product",
+      "name": "Wristia（リスティア）",
+      "description": "リストバンド全体がフレキシブルOLEDのスマートリストウォッチ。予定・メール・LINE・健康情報を大きな画面で確認できる。幅5cm／6cmの2タイプ。",
+      "image": "https://example.com/wristia/images/ogp.jpg",
+      "brand": { "@type": "Brand", "name": "Magic electronics" },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "JPY",
+        "lowPrice": "50000",
+        "highPrice": "60000",
+        "offerCount": "2",
+        "url": "https://example.com/wristia/#buy"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://example.com/wristia/#webpage",
+      "url": "https://example.com/wristia/",
+      "inLanguage": "ja",
+      "name": "Wristia（リスティア）｜手首ぜんぶが、画面になる。",
+      "about": { "@id": "https://example.com/wristia/#product" },
+      "publisher": { "@id": "https://example.com/wristia/#org" }
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Outfit:wght@600;700;800&display=swap">
+<link rel="preload" as="image" href="images/FV_wristia_poster.jpg" fetchpriority="high">
+<link rel="stylesheet" href="wristia.css">
+</head>
+<body>
+
+<!-- ===== SVG SPRITE ===== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-arrow" viewBox="0 0 20 20"><path d="M4 10h12M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 20 20"><path d="M5 8l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-star" viewBox="0 0 20 20"><path fill="currentColor" d="M10 1.8l2.5 5.2 5.7.8-4.1 4 1 5.6L10 14.7l-5.1 2.7 1-5.6-4.1-4 5.7-.8z"/></symbol>
+</svg>
+
+<div class="page">
+
+<!-- ===== HEADER ===== -->
+<header class="header">
+  <a class="logo" href="#top" aria-label="Wristia トップへ">
+    <span class="logo-mark" aria-hidden="true"></span>
+    <span class="logo-type">Wristia</span>
+  </a>
+  <nav class="gnav" aria-label="ページ内メニュー"><a href="#features">特長</a><a href="#scene">利用シーン</a><a href="#health">健康管理</a><a href="#buy">ラインナップ</a><a href="#faq">よくある質問</a></nav>
+  <a class="header-cta" href="#buy" data-cta="header_cta">サイズ・価格を見る</a>
+</header>
+
+<main>
+
+<!-- ===== FV ===== -->
+<section class="fv" id="top" aria-labelledby="fv-title">
+  <span class="fv-badge">フレキシブルOLED スマートリストウォッチ</span>
+  <!-- パネル：上＝テキスト／下＝動画（16:9のまま）。
+       テキスト側の背景＝動画の背景（人物・リストウォッチを除いた部分）を上へ自然に延ばして少しぼかした画像。
+       シーンが変わると背景画が切り替わり（クロスフェード）、文字色も明るさに合わせて変わる（wristia.js 5c の FV_SCENES）。 -->
+  <div class="fv-panel" id="fv-panel" data-tone="light">
+    <div class="fv-top">
+      <div class="fv-bg" id="fv-bg" aria-hidden="true">
+        <i class="fv-bgp is-on" style="background-image:url(images/FV_bg_cafe1.png)"></i>
+        <i class="fv-bgp" style="background-image:url(images/FV_bg_studio.png)"></i>
+        <i class="fv-bgp" style="background-image:url(images/FV_bg_black.jpg)"></i>
+        <i class="fv-bgp" style="background-image:url(images/FV_bg_cafe2.png)"></i>
+      </div>
+      <div class="fv-text">
+      <h1 id="fv-title">スマートウォッチが、<br>もっと<span class="mk">見やすく</span>、<br>便利に。</h1>
+      <p class="fv-sub">必要な情報は、すべて手元に。<br>予定・メール・LINEが、スマホなしで見やすい。</p>
+    </div>
+    </div>
+    <div class="hero" id="hero">
+      <video class="hero-video" id="fv-video" muted autoplay loop playsinline preload="auto" poster="images/FV_wristia_poster.jpg" width="1280" height="720" aria-label="Wristiaのイメージ映像。カフェで腕のWristiaを見る女性と、画面レイアウトが切り替わる様子">
+        <source src="videos/FV_wristia_movie_mod_text.mp4" type="video/mp4">
+      </video>
+      <button type="button" class="hero-toggle" id="fv-toggle" aria-label="映像を一時停止" aria-pressed="false">
+      <svg class="i-pause" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><rect x="3.5" y="2.5" width="3" height="11" rx="1"/><rect x="9.5" y="2.5" width="3" height="11" rx="1"/></svg>
+      <svg class="i-play" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4.5 2.8v10.4c0 .6.6.9 1.1.6l8-5.2c.5-.3.5-1 0-1.3l-8-5.2c-.5-.2-1.1.1-1.1.7z"/></svg>
+    </button>
+    </div>
+  </div>
+
+  <p class="fv-price">
+    <span>通常価格</span><strong>¥50,000</strong><span>〜（税込）</span><span class="sep" aria-hidden="true">|</span><span>幅6cmは¥60,000</span>
+  </p>
+
+  <a class="btn btn-main" id="fv-cta" href="#buy" data-cta="fv_cta">サイズ・価格を見る<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+  <a class="fv-register" href="#register" data-cta="fv_register">LINE・メールで最新情報を受け取る</a>
+
+  <ul class="fv-badges" aria-label="主な仕様">
+    <li>Android 12.0以降</li>
+    <li>1年保証</li>
+    <li>Gemini AI搭載</li>
+    <li>GPS内蔵</li>
+    <li>IP57 防塵・防水</li>
+    <li>おサイフケータイ</li>
+  </ul>
+  <p class="note">※画像・画面表示はイメージです。</p>
+</section>
+
+<!-- ===== PROBLEM ===== -->
+<section class="problem" aria-labelledby="problem-title">
+  <p class="eyebrow">PROBLEM</p>
+  <h2 class="h2" id="problem-title">こんな「見にくい」、<br>感じていませんか？</h2>
+  <ul class="problem-list">
+    <li class="problem-card">
+      <span class="ic-circle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M20 20l-4.8-4.8M8 10.5h5"/></svg></span>
+      <div><h3>通知の文字が小さくて、読みにくい</h3><p>画面が小さく、表示できる情報も限られる</p></div>
+    </li>
+    <li class="problem-card">
+      <span class="ic-circle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg></span>
+      <div><h3>スマホをいちいち出すのが、面倒</h3><p>会議中や移動中、手が離せないときに</p></div>
+    </li>
+    <li class="problem-card">
+      <span class="ic-circle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="5" width="7" height="7" rx="1.5"/><rect x="4" y="14" width="7" height="7" rx="1.5"/><rect x="14.5" y="15.5" width="6" height="6" rx="1.5"/></svg></span>
+      <div><h3>予定・メール・健康情報がバラバラ</h3><p>見たい情報ごとに画面を切り替える手間</p></div>
+    </li>
+  </ul>
+  <div class="down-arrow" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 4v12M5 11l5 5 5-5"/></svg></div>
+</section>
+
+<!-- ===== SOLUTION ===== -->
+<section class="solution" aria-labelledby="solution-title">
+  <div class="solution-inner">
+    <p class="eyebrow">SOLUTION</p>
+    <h2 class="h2" id="solution-title">手首ぜんぶが、<br>画面になる。</h2>
+    <p class="lead">リストバンド全体がフレキシブルOLED。見たい情報を、見やすく並べて表示できます。</p>
+
+    <!-- 表示エリア比較（images/LP_watch_size_compare_image.png／1672×941） -->
+    <figure class="compare">
+      <figcaption class="compare-title">表示エリアのイメージ</figcaption>
+      <img class="compare-img" src="images/LP_watch_size_compare_image.png" width="1672" height="941" alt="画面サイズの比較。標準的なスマートウォッチは45×45mm（表示面積 約2,025mm²）、Wristia幅5cmは50×60mm（約3,000mm²）、幅6cmは60×60mm（約3,600mm²）" loading="lazy" decoding="async">
+    </figure>
+
+    <!-- 操作デモ動画 -->
+    <!-- 動画：videos/LP_mode_view_movie.mp4（1280×720・16:9／音声なし）。poster は動画冒頭のフレーム（images/LP_mode_view_poster.jpg） -->
+    <div class="demo-wrap">
+      <div class="demo" id="demo">
+        <video id="demo-video" muted autoplay loop playsinline preload="metadata" poster="images/LP_mode_view_poster.jpg" width="1280" height="720" aria-label="モード切替のデモ映像。腕に着けたWristiaを指で操作して、画面を切り替える様子">
+          <source src="videos/LP_mode_view_movie.mp4" type="video/mp4">
+        </video>
+        <div class="demo-alt" aria-hidden="true">
+          <div class="demo-strap"></div>
+          <div class="demo-layer">
+            <span class="demo-mode">仕事モード</span>
+            <div class="screen screen-work">
+              <div class="cell wide"><span class="t">13:00</span>プロジェクト会議</div>
+              <div class="cell"><span class="c-green">LINE</span>新着 2件</div>
+              <div class="cell"><span class="c-blue">メール</span>打合せの件</div>
+              <div class="cell wide">今日の予定　<span class="c-blue">3件</span></div>
+            </div>
+          </div>
+          <div class="demo-layer">
+            <span class="demo-mode">健康管理モード</span>
+            <div class="screen screen-health">
+              <div class="cell"><span><span class="c-pink">♥</span> <span class="bpm">72</span><span class="u">bpm</span></span></div>
+              <div class="cell"><span><span class="num c-green">8,350</span><span class="u">歩</span></span></div>
+              <div class="cell"><span><span class="num c-orange">320</span><span class="u">kcal</span></span></div>
+              <div class="cell"><span><span class="num c-purple">7.5</span><span class="u">睡眠(時間)</span></span></div>
+            </div>
+          </div>
+          <div class="demo-layer">
+            <span class="demo-mode">ファッションモード</span>
+            <div class="screen screen-fashion">
+              <span class="time">10:08</span>
+              <span class="date">4月12日(土)</span>
+            </div>
+          </div>
+          <div class="demo-tabs"><span></span><span></span><span></span></div>
+        </div>
+        <button type="button" class="demo-toggle" id="demo-toggle" aria-label="デモを一時停止" aria-pressed="false"></button>
+        <span class="demo-state" aria-hidden="true">
+          <svg class="i-pause" viewBox="0 0 16 16" fill="currentColor"><rect x="3.5" y="2.5" width="3" height="11" rx="1"/><rect x="9.5" y="2.5" width="3" height="11" rx="1"/></svg>
+          <svg class="i-play" viewBox="0 0 16 16" fill="currentColor"><path d="M4.5 2.8v10.4c0 .6.6.9 1.1.6l8-5.2c.5-.3.5-1 0-1.3l-8-5.2c-.5-.2-1.1.1-1.1.7z"/></svg>
+        </span>
+      </div>
+      <p class="note">※イメージ映像です。</p>
+    </div>
+
+    <ol class="points">
+      <li class="point"><span class="point-no" aria-hidden="true">01</span><div><h3>表示面積が大きいから、見やすい</h3><p>手首に沿ったリストタイプ。文字も数字も大きく表示できます。</p></div></li>
+      <li class="point"><span class="point-no" aria-hidden="true">02</span><div><h3>必要な情報を、自由にレイアウト</h3><p>時刻・天気・通知・健康情報を、見やすい配置にアレンジ。</p></div></li>
+      <li class="point"><span class="point-no" aria-hidden="true">03</span><div><h3>スマホを出さずに、手元で操作</h3><p>通知の確認や通話、Googleウォレットでの支払いまで。</p></div></li>
+    </ol>
+
+    <a class="btn btn-navy inline-cta" href="#buy" data-cta="inline_cta_solution">サイズ・価格を見る<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+  </div>
+</section>
+
+<!-- ===== FEATURES ===== -->
+<section class="features" id="features" aria-labelledby="features-title">
+  <div class="features-deco" aria-hidden="true">FLEXIBLE</div>
+  <p class="eyebrow">FEATURES</p>
+  <h2 class="h2" id="features-title">表示も、デザインも、<br>思いのままに。</h2>
+
+  <!-- (a) MODE -->
+  <div class="fcard fcard-mode is-first">
+    <div class="f-head">
+      <p class="f-label">MODE</p>
+      <h3 class="f-title">シーンに合わせて、<br>画面をワンタッチで切り替え</h3>
+      <p class="f-text">仕事・健康管理・ファッションなど、カスタマイズしたモードをすぐに呼び出せます。</p>
+    </div>
+    <div class="hscroll mode-track" id="mode-track" role="region" aria-label="モード画面のイメージ（横スクロール）" tabindex="0">
+      <figure class="mode-slide">
+        <figcaption class="mode-name">仕事モード</figcaption>
+        <img src="images/wristia_6cm_work_image.png" width="1451" height="1084" alt="仕事モード：Schedule・メール・LINE・Teams・Geminiを一覧表示した画面" loading="lazy" decoding="async">
+      </figure>
+      <figure class="mode-slide">
+        <figcaption class="mode-name">健康管理モード</figcaption>
+        <img src="images/wristia_6cm_health_image.png" width="1451" height="1084" alt="健康管理モード：心拍数・歩数・カロリー・睡眠時間／質・血中酸素濃度を表示した画面" loading="lazy" decoding="async">
+      </figure>
+      <figure class="mode-slide">
+        <figcaption class="mode-name">ファッションモード</figcaption>
+        <img src="images/wristia_6cm_fashion_image.png" width="1451" height="1084" alt="ファッションモード：時計と壁紙を大きく見せる画面" loading="lazy" decoding="async">
+      </figure>
+    </div>
+    <div class="swipe-row">
+      <span class="swipe"><svg aria-hidden="true"><use href="#i-arrow"/></svg>SWIPE</span>
+      <div class="dots" data-dots-for="mode-track"></div>
+    </div>
+  </div>
+
+  <!-- (b) NOTIFICATION -->
+  <div class="fcard fcard-notif">
+    <img src="images/LP_display_expand_image.png" width="1501" height="840" alt="手首に着けたWristiaで、予定・メール・LINE・Teamsの通知を曲面に沿って大きく表示し、指でスクロールする様子" loading="lazy" decoding="async">
+    <div class="f-body">
+      <p class="f-label">NOTIFICATION</p>
+      <h3 class="f-title">通知を、曲面に沿って<br>ひと目で</h3>
+      <p class="f-text">メッセージやアプリの通知を大きく表示。スクロールして内容も確認できます。</p>
+      <p class="note">※画像はイメージです。</p>
+    </div>
+  </div>
+
+  <!-- (c) GOOGLE -->
+  <div class="fcard fcard-google">
+    <p class="f-label">GOOGLE</p>
+    <h3 class="f-title">Googleアプリも、手元で。</h3>
+    <p class="f-text">Gemini AIを搭載。Googleアプリを手元で使えて、Googleウォレットでの支払いにも対応。</p>
+    <img class="gimg" src="images/LP_google_tool_image.png" width="1451" height="1084" alt="Schedule・メール・LINE・ウォレット・Gemini・Mapのアプリが並ぶWristiaの画面イメージ" loading="lazy" decoding="async">
+    <p class="note">※画面はイメージです。</p>
+  </div>
+
+  <!-- (d) VENT -->
+  <div class="fcard fcard-vent">
+    <p class="f-label">VENT</p>
+    <h3 class="f-title">幅広でも、こもりにくい。</h3>
+    <!-- 通気溝の詳細画像を、既存の断面図の上端に重ねて配置（断面図の説明文＝下側の凡例・本文には重ならない） -->
+    <div class="vent-visual">
+    <img class="vent-detail" src="images/LP_Vent_image.png" width="511" height="390" alt="通気溝の詳細（拡大図）。縦方向に貫通する通気溝、肌との接触面積を減らす凸部、肌への刺激を抑える滑らかなエッジ" loading="lazy" decoding="async">
+    <svg class="vent-svg" viewBox="0 0 320 130" role="img" aria-labelledby="vent-t">
+      <title id="vent-t">内側の断面イメージ。本体の内側にやわらかなシリコーン層があり、5本の通気溝が空気の通り道になって、肌との接触面積を減らします。</title>
+      <defs>
+        <linearGradient id="alu" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D5E0E8"/><stop offset="1" stop-color="#7F93A8"/></linearGradient>
+        <marker id="arw" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#8FD0F5"/></marker>
+      </defs>
+      <rect x="16" y="10" width="288" height="15" rx="7" fill="url(#alu)"/>
+      <rect x="16" y="25" width="288" height="29" rx="4" fill="#6F86A0"/>
+      <g fill="#12263D">
+        <rect x="38" y="38" width="32" height="17" rx="5"/>
+        <rect x="90" y="38" width="32" height="17" rx="5"/>
+        <rect x="142" y="38" width="32" height="17" rx="5"/>
+        <rect x="194" y="38" width="32" height="17" rx="5"/>
+        <rect x="246" y="38" width="32" height="17" rx="5"/>
+      </g>
+      <path d="M12 56 C 100 53.5 220 53.5 308 56 V 72 H 12 Z" fill="#E8C4A8" opacity=".95"/>
+      <g fill="none" stroke="#8FD0F5" stroke-width="2" stroke-linecap="round" marker-end="url(#arw)">
+        <path d="M43 47 q5 -4 10 0 t10 0"/>
+        <path d="M95 47 q5 -4 10 0 t10 0"/>
+        <path d="M147 47 q5 -4 10 0 t10 0"/>
+        <path d="M199 47 q5 -4 10 0 t10 0"/>
+        <path d="M251 47 q5 -4 10 0 t10 0"/>
+      </g>
+      <g font-family="Noto Sans JP, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">
+        <circle cx="22" cy="88" r="4.5" fill="#8FD0F5"/><text x="32" y="92.5">通気溝＝空気の通り道</text>
+        <circle cx="22" cy="104" r="4.5" fill="#6F86A0" stroke="#B9C7D6" stroke-width="1"/><text x="32" y="108.5">やわらかなシリコーン素材</text>
+        <circle cx="22" cy="120" r="4.5" fill="#E8C4A8"/><text x="32" y="124.5">肌との接触面積を減らす</text>
+      </g>
+    </svg>
+    </div>
+    <p class="f-text">肌に触れる内側に、空気の通り道となる通気溝と、やわらかなシリコーン素材。肌との接触面積を減らし、汗や湿気がこもりにくい設計です。</p>
+    <p class="note">※構造はイメージです。</p>
+  </div>
+
+  <!-- (e) BATTERY -->
+  <div class="fgrid fgrid-batt">
+    <div class="fcard">
+      <p class="f-label">BATTERY</p>
+      <p class="batt-num" style="color:#B7EA7A">40<small>時間</small></p>
+      <p class="batt-text">常時表示する設定で最長のバッテリー駆動※</p>
+    </div>
+    <div class="fcard">
+      <p class="f-label">BATTERY</p>
+      <p class="batt-num" style="color:#8FD0F5">72<small>時間</small></p>
+      <p class="batt-text">バッテリーセーバーモードで最長※</p>
+    </div>
+  </div>
+
+  <!-- (f) SPEC ICONS -->
+  <div class="fgrid fgrid-spec">
+    <div class="fcard">
+      <svg class="spec-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/><path d="M9.5 14.5a2.5 2.5 0 0 0 2.5 2.5"/></svg>
+      <p class="spec-title en">IP57</p>
+      <p class="spec-text">防塵・防水。汗や雨、運動中も安心</p>
+    </div>
+    <div class="fcard">
+      <svg class="spec-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+      <p class="spec-title">GPS内蔵</p>
+      <p class="spec-text">デュアル周波数GPSで位置を記録</p>
+    </div>
+  </div>
+  <div class="fcard fcard-wide">
+    <svg class="spec-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none"><path d="M6 3h4v8a2 2 0 0 0 4 0V3h4v8a6 6 0 0 1-12 0z"/><path d="M6 7h4M14 7h4"/></svg>
+    <div>
+      <p class="spec-title">マグネットで、かんたん装着</p>
+      <p class="spec-text">薄型で腕に沿うリング状のスタイリッシュなデザイン</p>
+    </div>
+  </div>
+
+  <!-- (g) FOOTNOTE -->
+  <p class="foot">※バッテリー持続時間は、画面の明るさ・表示内容・測定機能の使用状況により異なります。</p>
+</section>
+
+<!-- ===== SCENE ===== -->
+<section class="scene" id="scene" aria-labelledby="scene-title">
+  <div class="scene-head">
+    <p class="eyebrow">SCENE</p>
+    <h2 class="h2" id="scene-title">いつでも、どこでも。<br>必要な情報が手元に。</h2>
+  </div>
+  <div class="hscroll scene-track" id="scene-track" role="region" aria-label="利用シーン（横スクロール）" tabindex="0">
+    <article class="scene-card">
+      <img src="images/scene-work.png" width="640" height="716" alt="会議中に手元で予定を確認する様子" loading="lazy" decoding="async" style="object-position:50% 70%">
+      <div class="scene-body">
+        <span class="tag tag-work">仕事</span>
+        <h3>必要な情報は、手元に。<br>仕事がもっとスマートに。</h3>
+        <p>会議の予定やメール、LINEの通知をまとめて確認。スマホを取り出す回数を減らせます。</p>
+      </div>
+    </article>
+    <article class="scene-card">
+      <img src="images/scene-health.png" width="640" height="690" alt="運動中に心拍数を確認する様子" loading="lazy" decoding="async" style="object-position:50% 50%">
+      <div class="scene-body">
+        <span class="tag tag-health">運動・健康管理</span>
+        <h3>運動中も、数字が<br>くっきり見やすい。</h3>
+        <p>心拍数や歩数、運動時間を大きく表示。ウォーキングやランニングのお供に。</p>
+      </div>
+    </article>
+    <article class="scene-card">
+      <img src="images/scene-daily.png" width="640" height="667" alt="日常の装いに合わせて着けた様子" loading="lazy" decoding="async" style="object-position:50% 55%">
+      <div class="scene-body">
+        <span class="tag tag-daily">おでかけ・日常</span>
+        <h3>健康も、おしゃれも。<br>毎日をもっと心地よく。</h3>
+        <p>薄型で腕に沿うデザイン。カラーは4色、ファッションに合わせて選べます。</p>
+      </div>
+    </article>
+  </div>
+  <div class="swipe-row">
+    <span class="swipe"><svg aria-hidden="true"><use href="#i-arrow"/></svg>SWIPE</span>
+    <div class="dots dots--light" data-dots-for="scene-track"></div>
+  </div>
+</section>
+
+<!-- ===== HEALTH ===== -->
+<section class="health" id="health" aria-labelledby="health-title">
+  <p class="eyebrow">HEALTH</p>
+  <h2 class="h2" id="health-title">からだの状態も、<br>大きな画面でひと目で。</h2>
+  <ul class="health-grid">
+    <li class="health-item"><svg viewBox="0 0 24 24" fill="none" stroke="#E0556A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.2 4.2 0 0 1 12 7.4 4.2 4.2 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></svg><span>心拍数</span></li>
+    <li class="health-item"><svg viewBox="0 0 24 24" fill="none" stroke="#D9822B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14.5V5a2 2 0 0 1 4 0v9.5a4 4 0 1 1-4 0z"/><path d="M12 10v6.5"/></svg><span>皮膚温度</span></li>
+    <li class="health-item"><svg viewBox="0 0 24 24" fill="none" stroke="#1B6A9C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/><circle cx="12" cy="14.5" r="2.2"/></svg><span>血中<br>酸素濃度</span></li>
+    <li class="health-item"><svg viewBox="0 0 24 24" fill="none" stroke="#E0556A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12h4l2-5 4 10 2.5-7 1.5 2H22"/></svg><span>心電図</span></li>
+    <li class="health-item"><svg viewBox="0 0 24 24" fill="none" stroke="#1B6A9C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17a8 8 0 1 1 16 0"/><path d="M12 17l4-5"/><circle cx="12" cy="17" r="1.2"/></svg><span>血圧</span></li>
+    <li class="health-item"><svg viewBox="0 0 24 24" fill="none" stroke="#7A5BD6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg><span>睡眠</span></li>
+    <li class="health-item"><svg viewBox="0 0 24 24" fill="none" stroke="#3F7D12" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 14c-1.7 0-2.7-2-2.7-4.6C5.3 6.8 6.5 4.5 8.3 4.5s2.5 2.1 2.2 4.8C10.2 12 9.7 14 8 14z"/><path d="M6.3 16.5h3.6v1.3a1.8 1.8 0 0 1-3.6 0z"/><path d="M16 10.5c1.7 0 2.7-2 2.7-4.6 0-2.6-1.2-4.4-3-4.4s-2.5 2.1-2.2 4.8c.3 2.7.8 4.2 2.5 4.2z"/><path d="M14.1 13h3.6v1.3a1.8 1.8 0 0 1-3.6 0z"/></svg><span>歩数</span></li>
+    <li class="health-item"><svg viewBox="0 0 24 24" fill="none" stroke="#D9822B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21c-3.9 0-6.5-2.6-6.5-6.2 0-3.6 3-5.6 3.5-9.8 2.6 1.6 3.9 3.8 3.9 5.6 1-.6 1.6-1.6 1.9-2.8 1.9 1.6 3.7 4.2 3.7 7 0 3.6-2.6 6.2-6.5 6.2z"/></svg><span>消費<br>カロリー</span></li>
+  </ul>
+  <p class="note">※測定値は日々の健康管理の目安です。※アイコンはイメージです。</p>
+</section>
+
+<!-- ===== BENEFIT ===== -->
+<section class="benefit" aria-labelledby="benefit-title">
+  <h2 class="h2" id="benefit-title">毎日が、ちょっと楽になる<br>3つのこと</h2>
+  <ul class="benefit-grid">
+    <li class="benefit-item">
+      <span class="ic-circle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></span>
+      <h3>見やすい</h3><p>大きな画面で<br>文字もくっきり</p>
+    </li>
+    <li class="benefit-item">
+      <span class="ic-circle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 10h18M11 10v10"/></svg></span>
+      <h3>分かりやすい</h3><p>整理された表示で<br>ひと目で把握</p>
+    </li>
+    <li class="benefit-item">
+      <span class="ic-circle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 16l.7 1.8 1.8.7-1.8.7L19 21l-.7-1.8-1.8-.7 1.8-.7z"/></svg></span>
+      <h3>見た目がきれい</h3><p>薄型で腕に沿う<br>スタイリッシュ</p>
+    </li>
+  </ul>
+  <a class="btn btn-navy inline-cta" href="#buy" data-cta="inline_cta_benefit">サイズ・価格を見る<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+</section>
+
+<!-- ===== LINEUP ===== -->
+<section class="lineup" id="buy" aria-labelledby="lineup-title">
+  <p class="eyebrow">LINEUP</p>
+  <h2 class="h2" id="lineup-title">幅は2タイプ。<br>使い方に合わせて選べます。</h2>
+
+  <!-- 購入ボタン：押すと「アマゾン／楽天」のメニューを表示するだけで、どこにも遷移しません（URLを入れる場合は wristia.js の MALLS） -->
+  <div class="products">
+    <article class="product product-5">
+      <img src="images/lineup-5cm.png" width="900" height="672" alt="幅5cmモデル" loading="lazy" decoding="async">
+      <span class="tag">幅5cm</span>
+      <p class="price">通常価格 <strong>¥50,000</strong>（税込）</p>
+      <div class="buy" data-size="5cm">
+        <button type="button" class="btn btn-buy buy-toggle" data-cta="lineup_5cm" aria-expanded="false" aria-controls="buy-menu-lineup_5cm">幅5cmを通販サイトで購入<svg class="chev" aria-hidden="true"><use href="#i-chev"/></svg></button>
+        <ul class="buy-menu" id="buy-menu-lineup_5cm" hidden>
+          <li><button type="button" class="buy-opt" data-mall="amazon">アマゾン</button></li>
+          <li><button type="button" class="buy-opt" data-mall="rakuten">楽天</button></li>
+        </ul>
+      </div>
+      <p class="product-sub">通気溝の内側設計で、幅広でもこもりにくい</p>
+    </article>
+    <article class="product product-6">
+      <img src="images/lineup-6cm.png" width="900" height="672" alt="幅6cmモデル" loading="lazy" decoding="async">
+      <span class="tag">幅6cm</span>
+      <p class="price">通常価格 <strong>¥60,000</strong>（税込）</p>
+      <div class="buy" data-size="6cm">
+        <button type="button" class="btn btn-buy buy-toggle" data-cta="lineup_6cm" aria-expanded="false" aria-controls="buy-menu-lineup_6cm">幅6cmを通販サイトで購入<svg class="chev" aria-hidden="true"><use href="#i-chev"/></svg></button>
+        <ul class="buy-menu" id="buy-menu-lineup_6cm" hidden>
+          <li><button type="button" class="buy-opt" data-mall="amazon">アマゾン</button></li>
+          <li><button type="button" class="buy-opt" data-mall="rakuten">楽天</button></li>
+        </ul>
+      </div>
+      <p class="product-sub">通気溝の内側設計で、幅広でもこもりにくい</p>
+    </article>
+  </div>
+  <p class="note">※画像はイメージです。表示内容は実際と異なる場合があります。</p>
+
+  <!-- サイズガイド（静的） -->
+  <div class="block block-size">
+    <h3 class="block-title">長さは、手首周りに合わせて2サイズ</h3>
+    <p class="block-note">幅5cm・6cm 共通</p>
+    <div class="size-grid">
+      <div class="size-card"><span class="sz">S</span><span class="rng">130〜175</span><span class="unit">mm（手首周り）</span></div>
+      <div class="size-card"><span class="sz">L</span><span class="rng">165〜210</span><span class="unit">mm（手首周り）</span></div>
+    </div>
+    <!-- [仮] 165〜175mm の推奨サイズは要確認 -->
+    <p class="size-help">手首周りの太い部分にメジャーを巻いて測ってください。165〜175mmの方はどちらも選べます。</p>
+  </div>
+
+  <!-- カラー -->
+  <div class="block block-color">
+    <h3 class="block-title">カラーは4色<span style="font-size:13px;font-weight:500;color:#4A5560">（側面と裏側のカラーです）</span></h3>
+    <ul class="swatches">
+      <li class="swatch"><i class="sw-black" aria-hidden="true"></i>ブラック</li>
+      <li class="swatch"><i class="sw-greige" aria-hidden="true"></i>グレージュ</li>
+      <li class="swatch"><i class="sw-purple" aria-hidden="true"></i>ライト<br>パープル</li>
+      <li class="swatch"><i class="sw-clear" aria-hidden="true"></i>クリア<br>スモーク</li>
+    </ul>
+  </div>
+
+  <!-- 商品仕様 -->
+  <details class="specs">
+    <summary>商品仕様を見る<span class="pm" aria-hidden="true"></span></summary>
+    <table class="spec-table">
+      <tr><th scope="row">素材</th><td>本体：軽量アルミニウム／バンド：ソフトシリコン</td></tr>
+      <tr><th scope="row">ディスプレイ</th><td>フレキシブルOLED</td></tr>
+      <tr><th scope="row">通信方式</th><td>Bluetooth 6.0、Wi-Fi（2.4GHz / 5GHz）、NFC、FeliCa（おサイフケータイ対応）</td></tr>
+      <tr><th scope="row">GPS</th><td>デュアル周波数GPS（GPS、Galileo、Glonass、Beidou、QZSS対応）</td></tr>
+      <tr><th scope="row">対応デバイス</th><td>Android 12.0 以降を搭載したほぼすべてのスマートフォン</td></tr>
+      <tr><th scope="row">電源</th><td>標準 455 mAh／常時表示で最長 40 時間、バッテリーセーバーモードで最長 72 時間</td></tr>
+      <tr><th scope="row">防塵・防水</th><td>IP57</td></tr>
+    </table>
+  </details>
+
+  <!-- 購入の安心情報 -->
+  <ul class="assure">
+    <!-- [仮] 発送日数は要確認 -->
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 6h11v10H2zM13 9h4.5l3.5 3.5V16h-8"/><circle cx="6" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg>配送：3日以内に発送</li>
+    <!-- [仮] 返品・交換の受付期間は要確認 -->
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 5L4 9l4 4"/><path d="M4 9h10a6 6 0 0 1 0 12h-3"/></svg>返品・交換：商品到着後8日以内</li>
+    <!-- [仮] 保証条件は要確認 -->
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7.5 3v5.5c0 4.6-3.2 8.2-7.5 9.5-4.3-1.3-7.5-4.9-7.5-9.5V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>保証：1年間</li>
+  </ul>
+</section>
+
+<!-- ===== VOICE ===== -->
+<section class="voice" aria-labelledby="voice-title">
+  <div class="voice-head">
+    <p class="eyebrow">VOICE</p>
+    <h2 class="h2" id="voice-title">お客様の声</h2>
+  </div>
+  <div class="hscroll voice-track" id="voice-track" role="region" aria-label="お客様の声（横スクロール）" tabindex="0">
+    <article class="voice-card">
+      <div class="stars" role="img" aria-label="5つ星中5"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></div>
+      <h3>仕事中の情報確認が、とても楽になりました！</h3>
+      <p>会議の予定やメール、LINEの通知を一度に確認できるのが本当に便利です。スマホを取り出す回数が減って、仕事中のちょっとしたストレスがなくなりました。</p>
+      <p class="who">40代 男性／会社員</p>
+    </article>
+    <article class="voice-card">
+      <div class="stars" role="img" aria-label="5つ星中5"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></div>
+      <h3>幅広なのに、思っていた以上に快適！</h3>
+      <p>最初は幅5cmだと不安がありましたが、内側の通気溝のおかげか、歩いているときも快適です。心拍数や運動時間も見やすくて助かっています。</p>
+      <p class="who">30代 女性／ウォーキングが趣味</p>
+    </article>
+    <article class="voice-card">
+      <div class="stars" role="img" aria-label="5つ星中5"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></div>
+      <h3>健康状態がひと目で分かるのがうれしい！</h3>
+      <p>心拍数や歩数、皮膚温度などをまとめて確認できるので、毎日の健康チェックが習慣になりました。画面が大きくて数字も見やすいところが気に入っています。</p>
+      <p class="who">50代 女性／健康管理を重視</p>
+    </article>
+    <article class="voice-card">
+      <div class="stars" role="img" aria-label="5つ星中5"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></div>
+      <h3>未来のスマートウォッチを着けている気分です！</h3>
+      <p>手首に沿って画面がカーブしているデザインが最高です。表示内容も自由に変えられて、自分だけのデバイスを使っている感じがします。</p>
+      <p class="who">30代 男性／ガジェット好き</p>
+    </article>
+  </div>
+  <div class="swipe-row">
+    <span class="swipe"><svg aria-hidden="true"><use href="#i-arrow"/></svg>SWIPE</span>
+    <div class="dots dots--light" data-dots-for="voice-track"></div>
+  </div>
+  <div class="voice-foot">
+    <p class="note">※個人の感想であり、効果・使用感を保証するものではありません。</p>
+    <a class="btn btn-navy inline-cta" href="#buy" data-cta="inline_cta_voice">サイズ・価格を見る<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="faq" id="faq" aria-labelledby="faq-title">
+  <p class="eyebrow">FAQ</p>
+  <h2 class="h2" id="faq-title">よくあるご質問</h2>
+  <div class="faq-list">
+    <details class="faq-item" open>
+      <summary><span class="faq-q" aria-hidden="true">Q</span><span class="faq-qt">普通のスマートウォッチとは何が違うのですか？</span><span class="pm" aria-hidden="true"></span></summary>
+      <div class="faq-a">最大の違いは、手首に沿って広がるフレキシブルOLEDディスプレイです。時刻、天気、健康情報、メッセージなどを複数のエリアに分けて表示できるため、スマートフォンを取り出さずに、さまざまな情報を一目で確認できます。</div>
+    </details>
+    <details class="faq-item">
+      <summary><span class="faq-q" aria-hidden="true">Q</span><span class="faq-qt">幅が5cmもあると、こもったり、締め付けが気になったりしませんか？</span><span class="pm" aria-hidden="true"></span></summary>
+      <div class="faq-a">肌に触れる内側には、空気の通り道となる通気溝と柔らかなシリコーン素材を採用しています。肌との接触面積を減らし、汗や湿気がこもりにくい設計です。</div>
+    </details>
+    <details class="faq-item">
+      <summary><span class="faq-q" aria-hidden="true">Q</span><span class="faq-qt">幅5cmと6cmはどちらを選べばいいですか？</span><span class="pm" aria-hidden="true"></span></summary>
+      <!-- [仮] 5cm/6cm の選び方基準は要確認 -->
+      <div class="faq-a">軽快さを重視する方は5cm、画面をより大きく見たい方は6cmがおすすめです。長さは手首周りに合わせてS／Lからお選びください。</div>
+    </details>
+    <details class="faq-item">
+      <summary><span class="faq-q" aria-hidden="true">Q</span><span class="faq-qt">金属アレルギーがあっても使用できますか？</span><span class="pm" aria-hidden="true"></span></summary>
+      <div class="faq-a">肌に直接触れる部分には、シリコーンなどの非金属素材を使用し、金属の露出をできる限りなくす設計をしています。また、心電図測定用には導電性ポリマー電極の採用を想定しています。<small>※すべての方にアレルギー反応が起きないことを保証するものではありません。</small></div>
+    </details>
+    <details class="faq-item">
+      <summary><span class="faq-q" aria-hidden="true">Q</span><span class="faq-qt">どのような健康情報を測定できますか？</span><span class="pm" aria-hidden="true"></span></summary>
+      <!-- [仮] 医療機器でない旨の表記は要確認 -->
+      <div class="faq-a">心拍数、皮膚温度、心電図、血中酸素濃度、歩数、睡眠時間などの測定機能を搭載しています。測定した情報を大きな画面に分かりやすく表示し、日々の健康管理に役立ちます。<small>※医療機器ではありません。測定値は日々の健康管理の目安です。</small></div>
+    </details>
+    <details class="faq-item">
+      <summary><span class="faq-q" aria-hidden="true">Q</span><span class="faq-qt">画面の表示内容や配置は自由に変更できますか？</span><span class="pm" aria-hidden="true"></span></summary>
+      <div class="faq-a">はい。画面を複数のエリアに分割し、表示する情報や配置をカスタマイズできる仕様です。仕事中は予定やメッセージ、運動中は心拍数や歩数など、利用シーンに合わせて切り替えられる設計です。</div>
+    </details>
+    <details class="faq-item">
+      <summary><span class="faq-q" aria-hidden="true">Q</span><span class="faq-qt">バッテリーはどのくらい持ちますか？</span><span class="pm" aria-hidden="true"></span></summary>
+      <div class="faq-a">常時表示で最長40時間、バッテリーセーバーモードで最長72時間ご使用いただけます。画面の明るさや表示内容、健康測定機能の使用状況によって変わります。</div>
+    </details>
+    <details class="faq-item">
+      <summary><span class="faq-q" aria-hidden="true">Q</span><span class="faq-qt">雨の日や運動中、入浴時にも使用できますか？</span><span class="pm" aria-hidden="true"></span></summary>
+      <!-- [仮] 入浴可否は要確認 -->
+      <div class="faq-a">日常生活での汗や雨に対応できるIP57の防塵・防水性能です。ウォーキングやランニングなどの運動中にもご使用いただけます。入浴時のご使用は推奨していません。</div>
+    </details>
+    <details class="faq-item">
+      <summary><span class="faq-q" aria-hidden="true">Q</span><span class="faq-qt">iPhoneでも使えますか？</span><span class="pm" aria-hidden="true"></span></summary>
+      <!-- [仮] iPhone対応可否は要確認 -->
+      <div class="faq-a">対応デバイスは、Android 12.0 以降を搭載したほぼすべてのスマートフォンです。iPhoneの対応については、確定次第お知らせします。</div>
+    </details>
+    <details class="faq-item">
+      <summary><span class="faq-q" aria-hidden="true">Q</span><span class="faq-qt">配送・返品・保証について教えてください。</span><span class="pm" aria-hidden="true"></span></summary>
+      <!-- [仮] 配送・返品条件は要確認 -->
+      <div class="faq-a">配送はご購入先の通販サイトの案内に準じます。保証期間は1年間です。返品・交換の条件はご購入先の通販サイトをご確認ください。</div>
+    </details>
+  </div>
+  <a class="btn btn-navy inline-cta" href="#buy" data-cta="inline_cta_faq">サイズ・価格を見る<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+</section>
+
+<!-- ===== FINAL CTA & REGISTER ===== -->
+<section class="final" id="final" aria-labelledby="final-title">
+  <div class="final-card">
+    <!-- 背景動画：TRY WRISTIA の画面に来ると自動再生（音なし・ループ）、画面外では停止（wristia.js 5d） -->
+    <div class="final-bg" aria-hidden="true">
+      <video id="final-video" muted loop playsinline preload="metadata" poster="images/TRY_Wristia_poster.jpg" width="1280" height="720" tabindex="-1">
+        <source src="videos/TRY_Wristia_movie.mp4" type="video/mp4">
+      </video>
+    </div>
+    <button type="button" class="final-toggle" id="final-toggle" aria-label="背景映像を一時停止" aria-pressed="false">
+      <svg class="i-pause" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><rect x="3.5" y="2.5" width="3" height="11" rx="1"/><rect x="9.5" y="2.5" width="3" height="11" rx="1"/></svg>
+      <svg class="i-play" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4.5 2.8v10.4c0 .6.6.9 1.1.6l8-5.2c.5-.3.5-1 0-1.3l-8-5.2c-.5-.2-1.1.1-1.1.7z"/></svg>
+    </button>
+    <p class="eyebrow">TRY WRISTIA</p>
+    <h2 class="h2" id="final-title">その見やすさを、<br>あなたの手首で。</h2>
+    <p class="lead">ご購入は、通販サイト<span data-store>・店舗</span>で承っています。</p>
+    <div class="buy" data-size="5cm">
+      <button type="button" class="btn btn-main buy-toggle" data-cta="final_shop5" aria-expanded="false" aria-controls="buy-menu-final_shop5">幅5cmを通販サイトで購入<svg class="chev" aria-hidden="true"><use href="#i-chev"/></svg></button>
+      <ul class="buy-menu" id="buy-menu-final_shop5" hidden>
+        <li><button type="button" class="buy-opt" data-mall="amazon">アマゾン</button></li>
+        <li><button type="button" class="buy-opt" data-mall="rakuten">楽天</button></li>
+      </ul>
+    </div>
+    <div class="buy" data-size="6cm">
+      <button type="button" class="btn btn-ghost buy-toggle" data-cta="final_shop6" aria-expanded="false" aria-controls="buy-menu-final_shop6">幅6cmを通販サイトで購入<svg class="chev" aria-hidden="true"><use href="#i-chev"/></svg></button>
+      <ul class="buy-menu" id="buy-menu-final_shop6" hidden>
+        <li><button type="button" class="buy-opt" data-mall="amazon">アマゾン</button></li>
+        <li><button type="button" class="buy-opt" data-mall="rakuten">楽天</button></li>
+      </ul>
+    </div>
+    <a class="store-link" data-store data-link="store" data-cta="final_store">取り扱い店舗を探す</a>
+  </div>
+
+  <div class="register" id="register">
+    <h3>まずは情報だけ受け取りたい方へ</h3>
+    <p>新着情報やキャンペーンを、LINEまたはメールでお届けします。</p>
+    <!-- [仮] 配信内容は要確認 -->
+    <ul class="reg-list">
+      <li>新商品・キャンペーンのお知らせ</li>
+      <li>サイズの選び方などの使い方情報</li>
+      <li>購入に役立つ最新情報</li>
+    </ul>
+    <a class="btn btn-line" data-link="line" data-cta="register_line"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3.5c-5 0-9 3.2-9 7.2 0 3.6 3.2 6.6 7.5 7.1l-.6 2.6c-.1.4.4.7.7.4l3.6-3c3.8-.8 6.8-3.6 6.8-7.1 0-4-4-7.2-9-7.2z"/></svg>LINEで友だち追加</a>
+
+    <p class="or">または</p>
+
+    <form id="mail-form" novalidate>
+      <label class="form-label" for="email">メールアドレス</label>
+      <input class="input" id="email" name="email" type="email" inputmode="email" autocomplete="email" required placeholder="example@mail.com" aria-describedby="mail-error">
+      <div class="hp" aria-hidden="true"><label for="company">会社名（入力不要）</label><input id="company" name="company" class="hp" tabindex="-1" autocomplete="off"></div>
+      <label class="agree"><input type="checkbox" id="agree" name="agree" required><span><a data-link="privacy">プライバシーポリシー</a>に同意して登録する</span></label>
+      <p id="mail-error" class="form-error" role="alert" aria-live="polite"></p>
+      <button type="submit" class="btn btn-navy" data-cta="register_mail_submit">メールで登録する</button>
+      <!-- [仮] 解除の仕組みは要確認 -->
+      <p class="form-note">配信はいつでも停止できます。</p>
+    </form>
+    <div class="reg-done" id="reg-done" role="status" hidden>登録ありがとうございます。<br>確認メールをお送りしました。</div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== COMPANY / FOOTER ===== -->
+<footer class="company" aria-labelledby="company-title">
+  <h2 id="company-title">販売会社概要</h2>
+  <dl>
+    <div class="row"><dt>会社名</dt><dd>Magic electronics</dd></div>
+    <div class="row"><dt>所在地</dt><dd>〒215-0004<br>神奈川県川崎市麻生区万福寺1-18-1</dd></div>
+    <div class="row"><dt>設立</dt><dd>2021年4月</dd></div>
+    <div class="row"><dt>代表者</dt><dd>代表取締役　家電 一番</dd></div>
+    <div class="row"><dt>事業内容</dt><dd>家電器具の企画・販売</dd></div>
+    <div class="row"><dt>お問合せ</dt><dd><a href="mailto:support@magic-electronics.jp">support@magic-electronics.jp</a></dd></div>
+    <div class="row"><dt>営業時間</dt><dd>平日 10:00〜18:00（土日祝休み）</dd></div>
+  </dl>
+  <p class="foot-links"><a data-link="privacy">プライバシーポリシー</a></p>
+  <p class="note">※Magic electronics および本商品は架空のものです（制作サンプル）。</p>
+  <p class="copy">© Magic electronics</p>
+</footer>
+
+</div><!-- /.page -->
+
+<!-- ===== STICKY CTA ===== -->
+<div class="sticky" id="sticky" aria-hidden="true">
+  <div class="buy buy--up" data-size="5cm">
+    <button type="button" class="btn btn-buy buy-toggle" data-cta="sticky_cta" tabindex="-1" aria-expanded="false" aria-controls="buy-menu-sticky_cta">幅5cmを通販サイトで購入<svg class="chev" aria-hidden="true"><use href="#i-chev"/></svg></button>
+    <ul class="buy-menu" id="buy-menu-sticky_cta" hidden>
+      <li><button type="button" class="buy-opt" data-mall="amazon" tabindex="-1">アマゾン</button></li>
+      <li><button type="button" class="buy-opt" data-mall="rakuten" tabindex="-1">楽天</button></li>
+    </ul>
+  </div>
+  <a class="sticky-sub" href="#buy" data-cta="sticky_size" tabindex="-1">サイズ・価格</a>
+</div>
+
+<script src="wristia.js"></script>
+</body>
+</html>
