@@ -98,9 +98,8 @@ a:focus-visible,summary:focus-visible,input:focus-visible,button:focus-visible{o
 
 /* ===== 1. FV ===== */
 .fv{padding:12px var(--gx) 32px;background:var(--bg)}
-.fv-badge{display:inline-block;padding:4px 12px;border-radius:999px;background:var(--lightblue);color:var(--link);font-size:12px;font-weight:700;line-height:1.5}
 /* 水色パネル：背景動画を敷き、見出し・本文を重ねる（SP＝動画はパネル下端いっぱい） */
-.fv-panel{position:relative;margin-top:14px;border-radius:32px;background:#CFCAC2;overflow:hidden}
+.fv-panel{position:relative;margin-top:2px;border-radius:32px;background:#CFCAC2;overflow:hidden}
 .fv-top{position:relative;isolation:isolate;padding:24px 20px 16px;overflow:hidden}
 /* テキスト側の背景：動画の背景（人物・リストウォッチ除外）を上へ延ばした画像を、少しぼかして敷く。シーンごとに切替 */
 .fv-bg{position:absolute;inset:-10px;z-index:-1;filter:blur(2px)}
@@ -588,6 +587,18 @@ details[open]>summary .pm::before{transform:rotate(180deg)}
   .gnav a:hover{background:var(--lightblue)}
   .header-cta{margin-left:8px}
 
+
+  /* --- FV：左＝テキスト＋動画パネル／右＝価格・CTA・仕様バッジ（左右の余白を抑える） --- */
+  .fv{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);column-gap:48px;align-items:center;padding:32px max(40px, calc(50% - 560px)) 64px}
+  .fv-panel{margin-top:0;border-radius:44px}
+  .fv-top{padding:44px 44px 28px}
+  .fv h1{font-size:40px}
+  .fv-side{min-width:0}
+  .fv-side .fv-price{margin-top:0;font-size:13px}
+  .fv-side .fv-price strong{font-size:22px}
+  .fv-side #fv-cta{max-width:none;margin-top:16px}
+  .fv-side .fv-register{justify-content:center}
+  .fv-side .fv-badges{margin-top:20px}
 
   /* --- SOLUTION：左説明／右デモ --- */
   .solution-inner{padding:72px 64px 64px;column-gap:56px;
