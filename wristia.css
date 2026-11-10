@@ -593,12 +593,20 @@ details[open]>summary .pm::before{transform:rotate(180deg)}
   .fv-panel{margin-top:0;border-radius:44px}
   .fv-top{padding:44px 44px 28px}
   .fv h1{font-size:40px}
-  .fv-side{min-width:0}
-  .fv-side .fv-price{margin-top:0;font-size:13px}
-  .fv-side .fv-price strong{font-size:22px}
-  .fv-side #fv-cta{max-width:none;margin-top:16px}
-  .fv-side .fv-register{justify-content:center}
-  .fv-side .fv-badges{margin-top:20px}
+  /* 右カラム：左パネル（見出し＋動画）と同じ高さのカードにして、中身を縦にバランスよく配置 */
+  .fv{align-items:stretch}
+  .fv-side{min-width:0;display:flex;flex-direction:column;justify-content:flex-start;padding:40px 36px 32px;background:#fff;border-radius:44px;box-shadow:inset 0 0 0 1px #E3E9EE}
+  .fv-side .fv-price{margin:0;flex-direction:row;flex-wrap:wrap;align-items:baseline;gap:2px 6px;font-size:15px;line-height:1.5}
+  .fv-side .fv-price>span:last-child{flex-basis:100%;font-size:14px;margin-top:4px}
+  .fv-side .fv-price>span:first-child{flex-basis:100%}
+  .fv-side .fv-price>span:first-child{font-weight:700;color:var(--link);letter-spacing:.08em}
+  .fv-side .fv-price strong{font-size:48px;line-height:1.1;display:inline}
+  .fv-side .fv-price .sep{display:none}
+  .fv-side #fv-cta{max-width:none;margin-top:auto;min-height:64px;font-size:17px}
+  .fv-side .fv-register{justify-content:center;font-size:15px;margin-top:8px}
+  .fv-side .fv-badges{margin-top:auto;gap:10px}
+  .fv-side .fv-badges li{font-size:13px;padding:5px 12px}
+  .fv-side .note{margin-top:20px}
 
   /* --- SOLUTION：左説明／右デモ --- */
   .solution-inner{padding:72px 64px 64px;column-gap:56px;
