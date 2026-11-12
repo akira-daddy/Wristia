@@ -135,7 +135,14 @@ a:focus-visible,summary:focus-visible,input:focus-visible,button:focus-visible{o
 #fv-cta{margin-top:10px}
 .fv-register{min-height:44px;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:var(--link);text-decoration:underline;text-underline-offset:3px;background:none;border:0}
 .fv-badges{margin-top:16px;display:flex;flex-wrap:wrap;gap:8px}
-.fv-badges li{background:#fff;border:1px solid var(--border);border-radius:999px;padding:3px 10px;font-size:12px;font-weight:500;line-height:1.5;color:var(--sub)}
+.fv-badges li{background:#fff;border:1px solid var(--border);border-radius:999px;padding:3px 10px;display:flex;align-items:center;gap:6px;font-size:12px;font-weight:500;line-height:1.5;color:var(--sub)}
+.fv-badges li::before{content:"";width:8px;height:8px;border-radius:50%;flex:none;background:var(--dot,var(--primary))}
+.fv-badges li:nth-child(1){--dot:#8FD0F5}
+.fv-badges li:nth-child(2){--dot:#B7EA7A}
+.fv-badges li:nth-child(3){--dot:#C3A8FF}
+.fv-badges li:nth-child(4){--dot:#FF8A96}
+.fv-badges li:nth-child(5){--dot:#5FD0C0}
+.fv-badges li:nth-child(6){--dot:#FFB35C}
 .fv .note{margin-top:10px}
 
 /* ===== 2. PROBLEM ===== */
@@ -468,16 +475,13 @@ details[open]>summary .pm::before{transform:rotate(180deg)}
 
   /* --- SOLUTION --- */
   .solution{padding-bottom:88px}
-  .solution-inner{border-radius:40px;padding:56px 48px 48px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:32px;
-    grid-template-areas:"eb eb" "h2 h2" "lead lead" "cmp demo" "pts pts" "cta cta"}
-  .solution-inner>.eyebrow{grid-area:eb}
-  .solution-inner>.h2{grid-area:h2;font-size:38px}
-  .solution-inner>.lead{grid-area:lead;max-width:36em}
-  .solution-inner>.compare{grid-area:cmp;align-self:start;margin-top:32px}
-  .solution-inner>.demo-wrap{grid-area:demo;margin-top:32px}
-  .solution-inner>.points{grid-area:pts;flex-direction:row;gap:24px;margin-top:40px}
+  /* 動画・表示エリア比較はSPと同じ縦積みのまま（広げても横へ移動しない）。01〜03だけ横並び */
+  .solution-inner{border-radius:40px;padding:56px 48px 48px}
+  .solution-inner>.lead{max-width:36em}
+  .solution-inner>.compare,.solution-inner>.demo-wrap{max-width:800px;margin-left:auto;margin-right:auto;margin-top:32px}
+  .solution-inner>.points{flex-direction:row;gap:24px;margin-top:40px;padding-left:0}
   .solution-inner>.points .point{flex:1;flex-direction:column;gap:6px}
-  .solution-inner>.inline-cta{grid-area:cta;margin-top:40px}
+  .solution-inner>.inline-cta{margin-top:40px}
   .point h3{font-size:17px}
   .point p{font-size:15px}
 
@@ -607,14 +611,6 @@ details[open]>summary .pm::before{transform:rotate(180deg)}
   .fv-side .fv-badges{margin-top:auto;gap:10px}
   .fv-side .fv-badges li{font-size:13px;padding:5px 12px}
   .fv-side .note{margin-top:20px}
-
-  /* --- SOLUTION：左説明／右デモ --- */
-  .solution-inner{padding:72px 64px 64px;column-gap:56px;
-    grid-template-areas:"eb demo" "h2 demo" "lead demo" "cmp demo" "pts demo" "cta demo";grid-template-rows:auto auto auto auto auto 1fr}
-  .solution-inner>.demo-wrap{margin-top:0;align-self:center}
-  .solution-inner>.points{flex-direction:column;gap:20px}
-  .solution-inner>.points .point{flex-direction:row;gap:12px}
-  .solution-inner>.inline-cta{margin-left:0;align-self:start}
 
   /* --- VOICE：4列 --- */
   .voice-track{grid-template-columns:repeat(4,minmax(0,1fr))}
